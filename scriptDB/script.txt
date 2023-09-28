@@ -1,0 +1,636 @@
+USE [db_dev]
+GO
+SET IDENTITY_INSERT [dbo].[Users] ON 
+GO
+INSERT [dbo].[Users] ([id], [username], [firstName], [lastName], [email], [password], [contact], [refreshToken], [imgSrc], [isActive], [createdAt], [updatedAt]) VALUES (1, N'FM', N'travel', N'Admin', N'fm@gmail.com', N'$2b$10$D63DlSZeS1tTPGvvITCoLO7KgWbtLy79ZVG.pueRGRYMy27iMJwfu', N'03894792479333', NULL, N'http://localhost:5000/uploads/users/profiles/20230916110923075.png', 1, CAST(N'2023-08-25T11:44:08.0110000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T09:46:32.7780000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Users] ([id], [username], [firstName], [lastName], [email], [password], [contact], [refreshToken], [imgSrc], [isActive], [createdAt], [updatedAt]) VALUES (2, N'Travel2 Admin', N'travel22', N'Admin', N'travel@gmail.com', N'$2b$10$Suruo0xZo0QJWvgRFwCM0u90GAnnrise4azgLra/L8Du0NfoMpSHa', N'03894792479', NULL, N'http://localhost:5000/uploads/users/profiles/20230923094428241.png', 1, CAST(N'2023-09-23T07:35:20.8010000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T09:46:25.6870000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Users] ([id], [username], [firstName], [lastName], [email], [password], [contact], [refreshToken], [imgSrc], [isActive], [createdAt], [updatedAt]) VALUES (3, N'Mall Admin', N'mall', N'Admin', N'mall@gmail.com', N'$2b$10$1UFBqW6wWPJdSq59MBl0xucU2LJm5k0587Qj7sDUSHYdCybHsgdn6', N'03289482984', NULL, NULL, 1, CAST(N'2023-09-23T09:48:30.8110000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T09:48:30.8110000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Users] ([id], [username], [firstName], [lastName], [email], [password], [contact], [refreshToken], [imgSrc], [isActive], [createdAt], [updatedAt]) VALUES (4, N'sports', N'Admin', N'Sports', N'sports@gmail.com', N'$2b$10$Y0tBMKx.u781dvL5kaUQWe5w4oIPb3G9OMEShlW/N5Lm0PA3Asode', N'0390820808', NULL, NULL, 1, CAST(N'2023-09-23T09:48:53.5000000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T09:48:53.5000000+00:00' AS DateTimeOffset))
+GO
+SET IDENTITY_INSERT [dbo].[Users] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Cities] ON 
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (1, N'Abbottabad', N'Abbottabad', NULL, 34.1558, 73.2194, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 148587, 1586788758, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (2, N'Abdul Hakim', N'Abdul Hakim', NULL, 30.55, 72.1328, N'Pakistan', N'PK', N'PAK', NULL, N'', 51494, 1586991157, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (3, N'Ahmadpur East', N'Ahmadpur East', NULL, 29.1439, 71.2592, N'Pakistan', N'PK', N'PAK', NULL, N'', 128112, 1586824484, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (4, N'Akora', N'Akora', NULL, 33.9925, 72.145, N'Pakistan', N'PK', N'PAK', NULL, N'', 20157, 1586486842, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (5, N'Arifwala', N'Arifwala', NULL, 30.2981, 73.0561, N'Pakistan', N'PK', N'PAK', NULL, N'', 95655, 1586262431, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (6, N'Attock Khurd', N'Attock Khurd', NULL, 33.7667, 72.3667, N'Pakistan', N'PK', N'PAK', NULL, N'', 97374, 1586388059, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (7, N'Bagu Na Mohra', N'Bagu Na Mohra', NULL, 33.22, 73.21, N'Pakistan', N'PK', N'PAK', NULL, N'', 108784, 1586067919, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (8, N'Bahawalnagar', N'Bahawalnagar', NULL, 29.9928, 73.2536, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 141935, 1586152082, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (9, N'Bahawalpur', N'Bahawalpur', NULL, 29.3956, 71.6836, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 762111, 1586038700, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (10, N'Bahrain', N'Bahrain', NULL, 35.2078, 72.5483, N'Pakistan', N'PK', N'PAK', NULL, N'', 102253, 1586382775, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (11, N'Bannu', N'Bannu', NULL, 32.9864, 70.6044, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 62191, 1586858934, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (12, N'Basla', N'Basla', NULL, 33.3833, 73.3167, N'Pakistan', N'PK', N'PAK', NULL, N'', 10000, 1586287583, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (13, N'Bat Khela', N'Bat Khela', NULL, 34.62, 71.97, N'Pakistan', N'PK', N'PAK', NULL, N'', 38222, 1586033847, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (14, N'Batgram', N'Batgram', NULL, 34.6833, 73.0167, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 27083, 1586989930, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (15, N'Bhakkar', N'Bhakkar', NULL, 31.6278, 71.0625, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 88472, 1586655125, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (16, N'Bhalwal', N'Bhalwal', NULL, 32.2656, 72.8994, N'Pakistan', N'PK', N'PAK', NULL, N'', 82556, 1586233064, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (17, N'Bhawana', N'Bhawana', NULL, 31.5661, 72.6461, N'Pakistan', N'PK', N'PAK', NULL, N'', 373841, 1586746564, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (18, N'Bunji', N'Bunji', NULL, 35.6422, 74.6336, N'Pakistan', N'PK', N'PAK', NULL, N'', 10000, 1586909748, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (19, N'Cantonment', N'Cantonment', NULL, 31.5167, 74.3833, N'Pakistan', N'PK', N'PAK', NULL, N'', 374872, 1586338974, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (20, N'Chakwal', N'Chakwal', NULL, 32.9303, 72.8556, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 299751, 1586412908, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (21, N'Chaman', N'Chaman', NULL, 30.921, 66.4597, N'Pakistan', N'PK', N'PAK', NULL, N'', 107660, 1586640695, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (22, N'Charsadda', N'Charsadda', NULL, 34.15, 71.7333, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 105414, 1586928614, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (23, N'Chauk Azam', N'Chauk Azam', NULL, 30.9648, 71.217, N'Pakistan', N'PK', N'PAK', NULL, N'', 150000, 1586262687, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (24, N'Chenab Nagar', N'Chenab Nagar', NULL, 31.7528, 72.9222, N'Pakistan', N'PK', N'PAK', NULL, N'', 53965, 1586549514, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (25, N'Chilas', N'Chilas', NULL, 35.4194, 74.0944, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 214000, 1586064350, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (26, N'Chiniot', N'Chiniot', NULL, 31.7194, 72.9842, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 477781, 1586413435, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (27, N'Chishtian', N'Chishtian', NULL, 29.8, 72.8333, N'Pakistan', N'PK', N'PAK', NULL, N'', 101659, 1586451544, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (28, N'Chitral', N'Chitral', NULL, 35.8511, 71.7889, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 31100, 1586861716, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (29, N'Chunian', N'Chunian', NULL, 30.9639, 73.9803, N'Pakistan', N'PK', N'PAK', NULL, N'', 64386, 1586655697, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (30, N'Dadu', N'Dadu', NULL, 26.7319, 67.775, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 146179, 1586791198, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (31, N'Dainyor', N'Dainyor', NULL, 35.9194, 74.3889, N'Pakistan', N'PK', N'PAK', NULL, N'', 25000, 1586862411, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (32, N'Dera Ghazi Khan', N'Dera Ghazi Khan', NULL, 30.0331, 70.64, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 399064, 1586002238, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (33, N'Dera Ismail Khan', N'Dera Ismail Khan', NULL, 31.8314, 70.9019, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 109686, 1586008360, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (34, N'Dipalpur', N'Dipalpur', NULL, 30.6708, 73.6533, N'Pakistan', N'PK', N'PAK', NULL, N'', 87176, 1586506057, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (35, N'Faisalabad', N'LYP', NULL, 31.4167, 73.0911, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 3203846, 1586323916, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (36, N'Gakuch', N'Gakuch', NULL, 36.1736, 73.7667, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 10142, 1586006258, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (37, N'Gilgit', N'Gilgit', NULL, 35.9208, 74.3083, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 8851, 1586284242, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (38, N'Gojra', N'Gojra', NULL, 31.15, 72.6833, N'Pakistan', N'PK', N'PAK', NULL, N'', 157863, 1586904918, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (39, N'Goth Tando Sumro', N'Goth Tando Sumro', NULL, 25.45, 68.7167, N'Pakistan', N'PK', N'PAK', NULL, N'', 112335, 1586855342, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (40, N'Gujranwala', N'Gujranwala', NULL, 32.1567, 74.19, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 2027001, 1586400472, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (41, N'Gujrat', N'Gujrat', NULL, 32.5739, 74.0789, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 390533, 1586006990, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (42, N'Gwadar', N'Gwadar', NULL, 25.1264, 62.3225, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 90762, 1586857142, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (43, N'Hafizabad', N'Hafizabad', NULL, 32.0714, 73.6878, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 245784, 1586945951, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (44, N'Hangu', N'Hangu', NULL, 33.5333, 71.0667, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 39766, 1586769539, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (45, N'Haripur', N'Haripur', NULL, 33.9942, 72.9333, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 49318, 1586000122, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (46, N'Harunabad', N'Harunabad', NULL, 29.613, 73.1409, N'Pakistan', N'PK', N'PAK', NULL, N'', 77206, 1586810051, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (47, N'Hasilpur', N'Hasilpur', NULL, 29.6967, 72.5542, N'Pakistan', N'PK', N'PAK', NULL, N'', 99171, 1586677874, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (48, N'Hassan Abdal', N'Hassan Abdal', NULL, 33.8195, 72.689, N'Pakistan', N'PK', N'PAK', NULL, N'', 50044, 1586993764, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (49, N'Hujra Shah Muqim', N'Hujra Shah Muqim', NULL, 30.7408, 73.8219, N'Pakistan', N'PK', N'PAK', NULL, N'', 70204, 1586402344, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (50, N'Hyderabad City', N'Hyderabad City', NULL, 25.3792, 68.3683, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 1732693, 1586185019, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (51, N'Islamabad', N'ISB', NULL, 33.6931, 73.0639, N'Pakistan', N'PK', N'PAK', NULL, N'primary', 1014825, 1586306717, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (52, N'Jacobabad', N'Jacobabad', NULL, 28.2769, 68.4514, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 200815, 1586964444, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (53, N'Jalalabad', N'Jalalabad', NULL, 35.88, 74.493, N'Pakistan', N'PK', N'PAK', NULL, N'', 40000, 1586185836, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (54, N'Jalalpur Jattan', N'Jalalpur Jattan', NULL, 32.7667, 74.2167, N'Pakistan', N'PK', N'PAK', NULL, N'', 90130, 1586822268, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (55, N'Jamshoro', N'Jamshoro', NULL, 25.4244, 68.2811, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 80000, 1586889028, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (56, N'Jaranwala', N'Jaranwala', NULL, 31.3342, 73.4194, N'Pakistan', N'PK', N'PAK', NULL, N'', 150380, 1586829520, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (57, N'Jauharabad', N'Jauharabad', NULL, 32.2919, 72.2736, N'Pakistan', N'PK', N'PAK', NULL, N'', 91254, 1586975487, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (58, N'Jhang City', N'Jhang City', NULL, 31.2694, 72.3161, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 414131, 1586288677, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (59, N'Jhelum', N'Jhelum', NULL, 32.9425, 73.7256, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 190425, 1586164490, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (60, N'Kabirwala', N'Kabirwala', NULL, 30.4053, 71.8681, N'Pakistan', N'PK', N'PAK', NULL, N'', 70123, 1586254267, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (61, N'Kahror Pakka', N'Kahror Pakka', NULL, 29.6236, 71.9167, N'Pakistan', N'PK', N'PAK', NULL, N'', 76098, 1586974931, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (62, N'Kalat', N'Kalat', NULL, 29.0258, 66.59, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 22879, 1586475161, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (63, N'Kamalia', N'Kamalia', NULL, 30.7258, 72.6447, N'Pakistan', N'PK', N'PAK', NULL, N'', 121401, 1586927428, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (64, N'Kambar', N'Kambar', NULL, 27.5868, 68.001, N'Pakistan', N'PK', N'PAK', NULL, N'', 97691, 1586424773, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (65, N'Kandhkot', N'Kandhkot', NULL, 28.4, 69.3, N'Pakistan', N'PK', N'PAK', NULL, N'', 105011, 1586311788, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (66, N'Karachi', N'KHI', NULL, 24.86, 67.01, N'Pakistan', N'PK', N'PAK', NULL, N'admin', 15738000, 1586129469, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (67, N'Karak', N'Karak', NULL, 33.1167, 71.0833, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 35844, 1586491871, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (68, N'Kasur', N'Kasur', NULL, 31.1167, 74.45, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 314617, 1586858135, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (69, N'Kathri', N'Kathri', NULL, 26.4583, 68.3192, N'Pakistan', N'PK', N'PAK', NULL, N'', 80000, 1586828294, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (70, N'Khairpur Mir’s', N'Khairpur Mir’s', NULL, 27.5333, 68.7667, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 144949, 1586259149, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (71, N'Khanewal', N'Khanewal', NULL, 30.3, 71.9333, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 227059, 1586883649, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (72, N'Khanpur', N'Khanpur', NULL, 28.6453, 70.6567, N'Pakistan', N'PK', N'PAK', NULL, N'', 160308, 1586169401, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (73, N'Kharian', N'Kharian', NULL, 32.811, 73.865, N'Pakistan', N'PK', N'PAK', NULL, N'', 85765, 1586004203, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (74, N'Khushab', N'Khushab', NULL, 32.2986, 72.3508, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 110868, 1586738716, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (75, N'Khuzdar', N'Khuzdar', NULL, 27.8, 66.6167, N'Pakistan', N'PK', N'PAK', NULL, N'', 141395, 1586530458, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (76, N'Kohat', N'Kohat', NULL, 33.5833, 71.4333, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 170800, 1586349992, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (77, N'Kot Addu', N'Kot Addu', NULL, 30.47, 70.9644, N'Pakistan', N'PK', N'PAK', NULL, N'', 120479, 1586130042, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (78, N'Kotli', N'Kotli', NULL, 33.5156, 73.9019, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 21462, 1586677063, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (79, N'Kotri', N'Kotri', NULL, 25.366, 68.3122, N'Pakistan', N'PK', N'PAK', NULL, N'', 259358, 1586308347, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (80, N'Kulachi', N'Kulachi', NULL, 31.9286, 70.4592, N'Pakistan', N'PK', N'PAK', NULL, N'', 24738, 1586015711, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (81, N'Kundian', N'Kundian', NULL, 32.4522, 71.4718, N'Pakistan', N'PK', N'PAK', NULL, N'', 35406, 1586180022, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (82, N'Lahore', N'LHR', NULL, 31.5497, 74.3436, N'Pakistan', N'PK', N'PAK', NULL, N'admin', 12306000, 1586801463, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (83, N'Lala Musa', N'Lala Musa', NULL, 32.7003, 73.9578, N'Pakistan', N'PK', N'PAK', NULL, N'', 67283, 1586484801, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (84, N'Lalian', N'Lalian', NULL, 31.8253, 72.8027, N'Pakistan', N'PK', N'PAK', NULL, N'', 150000, 1586600950, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (85, N'Larkana', N'Larkana', NULL, 27.5583, 68.2111, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 490508, 1586678302, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (86, N'Mandi Bahauddin', N'MBD', NULL, 32.5797, 73.4814, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 157352, 1586202018, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (87, N'Mandi Burewala', N'Mandi Burewala', NULL, 30.15, 72.6833, N'Pakistan', N'PK', N'PAK', NULL, N'', 203454, 1586997587, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (88, N'Mansehra', N'Mansehra', NULL, 34.3339, 73.2014, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 69085, 1586902336, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (89, N'Mardan', N'Mardan', NULL, 34.2012, 72.0258, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 358604, 1586001546, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (90, N'Masho Khel', N'Masho Khel', NULL, 33.9103, 71.5025, N'Pakistan', N'PK', N'PAK', NULL, N'', 12240, 1586821243, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (91, N'Mian Channun', N'Mian Channun', NULL, 30.4397, 72.3544, N'Pakistan', N'PK', N'PAK', NULL, N'', 82586, 1586864091, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (92, N'Mian Sahib', N'Mian Sahib', NULL, 28.1559, 68.6397, N'Pakistan', N'PK', N'PAK', NULL, N'', 15000, 1586510355, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (93, N'Mianwali', N'Mianwali', NULL, 32.5853, 71.5436, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 95007, 1586006907, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (94, N'Mingaora', N'Mingaora', NULL, 34.7717, 72.36, N'Pakistan', N'PK', N'PAK', NULL, N'', 279914, 1586782526, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (95, N'Mirpur Khas', N'Mirpur Khas', NULL, 25.5269, 69.0111, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 236961, 1586156251, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (96, N'Mithi', N'Mithi', NULL, 24.7333, 69.8, N'Pakistan', N'PK', N'PAK', NULL, N'', 20079, 1586400830, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (97, N'Multan', N'Multan', NULL, 30.1978, 71.4697, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 1871843, 1586256291, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (98, N'Muridke', N'Muridke', NULL, 31.802, 74.255, N'Pakistan', N'PK', N'PAK', NULL, N'', 163268, 1586205456, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (99, N'Murree', N'Murree', NULL, 33.9042, 73.3903, N'Pakistan', N'PK', N'PAK', NULL, N'', 20869, 1586573416, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (100, N'Muzaffarabad', N'Muzaffarabad', NULL, 34.3583, 73.4722, N'Pakistan', N'PK', N'PAK', NULL, N'', 96000, 1586389158, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (101, N'Muzaffargarh', N'Muzaffargarh', NULL, 30.0694, 71.1942, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 163268, 1586492401, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (102, N'Nankana Sahib', N'Nankana Sahib', NULL, 31.45, 73.7067, N'Pakistan', N'PK', N'PAK', NULL, N'', 63073, 1586529540, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (103, N'Naushahro Firoz', N'Naushahro Firoz', NULL, 26.8422, 68.1228, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 38181, 1586454087, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (104, N'Nawabshah', N'Nawabshah', NULL, 26.2442, 68.41, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 263102, 1586294005, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (105, N'New Mirpur', N'New Mirpur', NULL, 33.149, 73.7485, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 124352, 1586007078, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (106, N'Nowshera', N'Nowshera', NULL, 34.0153, 71.9747, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 118594, 1586290729, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (107, N'Nurkot', N'Nurkot', NULL, 32.2017, 75.1186, N'Pakistan', N'PK', N'PAK', NULL, N'', 12876, 1586853360, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (108, N'Okara', N'Okara', NULL, 30.8092, 73.4536, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 232386, 1586880900, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (109, N'Pakpattan', N'Pakpattan', NULL, 30.35, 73.4, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 139525, 1586409848, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (110, N'Parachinar', N'Parachinar', NULL, 33.9, 70.1, N'Pakistan', N'PK', N'PAK', NULL, N'', 115502, 1586337795, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (111, N'Pasrur', N'Pasrur', NULL, 32.2681, 74.6675, N'Pakistan', N'PK', N'PAK', NULL, N'', 58644, 1586432904, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (112, N'Pattoki', N'Pattoki', NULL, 31.0214, 73.8528, N'Pakistan', N'PK', N'PAK', NULL, N'', 77210, 1586235509, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (113, N'Peshawar', N'Peshawar', NULL, 34.0144, 71.5675, N'Pakistan', N'PK', N'PAK', NULL, N'admin', 1970042, 1586851102, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (114, N'Quetta', N'Quetta', NULL, 30.1833, 67, N'Pakistan', N'PK', N'PAK', NULL, N'admin', 1001205, 1586556108, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (115, N'Rahimyar Khan', N'Rahimyar Khan', NULL, 28.42, 70.3, N'Pakistan', N'PK', N'PAK', NULL, N'', 420419, 1586136399, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (116, N'Rangewala', N'Rangewala', NULL, 30.8222, 74.2611, N'Pakistan', N'PK', N'PAK', NULL, N'', 55057, 1586869503, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (117, N'Rawalpindi', N'Rawalpindi', NULL, 33.6, 73.0333, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 2098231, 1586344001, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (118, N'Risalpur Cantonment', N'Risalpur Cantonment', NULL, 34.0049, 71.9989, N'Pakistan', N'PK', N'PAK', NULL, N'', 36653, 1586844436, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (119, N'Rohri', N'Rohri', NULL, 27.6831, 68.9, N'Pakistan', N'PK', N'PAK', NULL, N'', 69920, 1586107565, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (120, N'Saddiqabad', N'Saddiqabad', NULL, 28.3006, 70.1302, N'Pakistan', N'PK', N'PAK', NULL, N'', 189876, 1586378758, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (121, N'Sahiwal', N'Sahiwal', NULL, 30.6611, 73.1083, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 247706, 1586672083, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (122, N'Saidpur', N'Saidpur', NULL, 33.7421, 73.0677, N'Pakistan', N'PK', N'PAK', NULL, N'', 12000, 1586603702, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (123, N'Saidu Sharif', N'Saidu Sharif', NULL, 34.75, 72.3572, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 1860310, 1586619596, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (124, N'Sambrial', N'Sambrial', NULL, 32.475, 74.3522, N'Pakistan', N'PK', N'PAK', NULL, N'', 71766, 1586539893, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (125, N'Samundri', N'Samundri', NULL, 31.0639, 72.9611, N'Pakistan', N'PK', N'PAK', NULL, N'', 73911, 1586905223, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (126, N'Sarai Alamgir', N'Sarai Alamgir', NULL, 32.9, 73.75, N'Pakistan', N'PK', N'PAK', NULL, N'', 350288, 1586338206, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (127, N'Sargodha', N'Sargodha', NULL, 32.0836, 72.6711, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 659862, 1586696588, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (128, N'Shah Latif Town', N'Shah Latif Town', NULL, 24.8806, 67.1625, N'Pakistan', N'PK', N'PAK', NULL, N'', 335823, 1586521586, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (129, N'Shakargarh', N'Shakargarh', NULL, 32.2628, 75.1583, N'Pakistan', N'PK', N'PAK', NULL, N'', 73160, 1586086639, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (130, N'Shekhupura', N'Shekhupura', NULL, 31.7111, 73.9878, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 473129, 1586291726, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (131, N'Shujaabad', N'Shujaabad', NULL, 29.8803, 71.295, N'Pakistan', N'PK', N'PAK', NULL, N'', 70595, 1586679997, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (132, N'Sialkot City', N'Sialkot City', NULL, 32.4925, 74.5311, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 655852, 1586141444, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (133, N'Sukkur', N'Sukkur', NULL, 27.7061, 68.8483, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 499900, 1586383591, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (134, N'Swabi', N'Swabi', NULL, 34.1202, 72.4702, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 115018, 1586628764, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (135, N'Tando Allahyar', N'Tando Allahyar', NULL, 25.4667, 68.7167, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 133487, 1586001015, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (136, N'Tank', N'Tank', NULL, 32.13, 70.23, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 44996, 1586200762, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (137, N'Timargara', N'Timargara', NULL, 34.8278, 71.8417, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 58050, 1586843763, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (138, N'Toba Tek Singh', N'Toba Tek Singh', NULL, 30.9711, 72.4825, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 75943, 1586875835, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (139, N'Turbat', N'Turbat', NULL, 26.0031, 63.0544, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 147791, 1586802806, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (140, N'Umarkot', N'Umarkot', NULL, 25.3614, 69.7361, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 35059, 1586494172, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (141, N'Vihari', N'Vihari', NULL, 30.0419, 72.3528, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 128034, 1586888846, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (142, N'Wahga', N'Wahga', NULL, 31.6047, 74.5731, N'Pakistan', N'PK', N'PAK', NULL, N'', 26900, 1586031751, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (143, N'Zafarwal', N'Zafarwal', NULL, 32.3463, 74.8999, N'Pakistan', N'PK', N'PAK', NULL, N'', 134275, 1586796643, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Cities] ([id], [city], [cityCode], [cityAscii], [lat], [lng], [country], [iso2], [iso3], [adminName], [capital], [population], [originalId], [createdAt], [updatedAt]) VALUES (144, N'Zhob', N'Zhob', NULL, 31.3417, 69.4486, N'Pakistan', N'PK', N'PAK', NULL, N'minor', 88356, 1586969046, CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset), CAST(N'2023-09-22T10:26:21.8360000+00:00' AS DateTimeOffset))
+GO
+SET IDENTITY_INSERT [dbo].[Cities] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Branches] ON 
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (1, 82, N'Travel Channel', N'Travel Channel, Head Office Branch', N'FM-01', N'Head Office Branch', N'53 A-1, Block E 1 Gulberg III, Lahore, Punjab 54000, Pakistan', N'03111147111', N'', 1, CAST(N'2023-09-23T06:35:35.1780000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T06:35:35.1780000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (2, 82, N'FM Shop & Fly', N'FM Shop & Fly', N'FM-02', N'', N'53 A-1, Block E 1 Gulberg III, Lahore, Punjab 54000, Pakistan', N'03111147111', N'', 1, CAST(N'2023-09-23T06:45:55.4580000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T06:45:55.4580000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (3, 82, N'Fast Sports Broadcasting', N'Fast Sports Broadcasting', N'FSB-01', N'Fast Sports Broadcasting services', N'53 A-1, Block E 1 Gulberg III, Lahore, Punjab 54000, Pakistan', N'03111147111', N'', 1, CAST(N'2023-09-23T06:46:38.0860000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T06:46:38.0860000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (4, 51, N'Blue Area', N'Blue Area Branch', N'ISB-01', N'Blue Area Branch', N'Office No. 6, Shahid Plaza, Jinnah Avenue, Blue Area, Islamabad', N'03111147111', N'', 1, CAST(N'2023-09-23T06:47:13.0510000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T06:47:13.0510000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (5, 51, N'Bahria Town', N'Islamabad (Bahria Town)', N'ISB-02', N'Bahria Town Branch', N'Office No. 8, Ground Floor, Plaza No. 139, Phase IV,Civic Center,Bahria Town, Islamabad', N'03111147111', N'', 1, CAST(N'2023-09-23T07:06:17.0830000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:06:17.0830000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (6, 66, N'Karachi Branch', N'Karachi Branch', N'KHI-01', N'Karachi Branch', N'Office No. 3, Plot No.16-C, <br/> Main Shahbaz Commercial,Near Pizza Hut,<br/> Phase-VI, DHA,Karachi, Pakistan', N'03111147111', N'', 1, CAST(N'2023-09-23T07:08:20.0950000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:08:20.0950000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (7, 66, N'Clifton', N'Clifton Branch ', N'KHI-02', N'Clifton Branch', N'F3/3, Block 9, KDA Scheme 5, Clifton (Behind Forum Mall)', N'03111147111', N'', 1, CAST(N'2023-09-23T07:09:07.0680000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:09:07.0680000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (8, 35, N'Faisalabad Branch', N'Faisalabad Branch', N'LYP-01', N'Faisalabad Branch', N'Office No. 10 - 11, Ground Floor<br/>Kohinoor 1 Plaza Jaranwala Road<br/>Faisalabad, Pakistan.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:09:47.5160000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:09:47.5160000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (9, 86, N'Mandi Bahauddin', N'Mandi Bahauddin', N'MBD-01', N'Mandi Bahauddin', N'Office No. 3, First Floor<br/>City Arcade Sufi City<br/>Mandi Bahauddin, Pakistan.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:10:13.8350000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:10:13.8350000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (10, 82, N'Kalma Chowk', N'Faremakers Kalma Chowk', N'LHE-01', N'Faremakers Kalma Chowk', N'3-UGF, Century Tower, Kalma Chowk,<br />Main Boulevard, Gulberg-III, Lahore, Pakistan.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:14:24.2020000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:14:24.2020000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (11, 82, N'Defence', N'Defence Branch', N'LHE-02', N'Defence Branch', N'Plot-211, Block CCA FF Market,<br />Defence Housing Society (DHA) Phase 4, Lahore, Pakistan', N'03111147111', N'', 1, CAST(N'2023-09-23T07:14:52.7630000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:14:52.7630000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (12, 82, N'Shimla Hill', N'Shimla Hill', N'LHE-03', N'Shimla Hill', N'4-UGF, National Tower,<br />Egerton Road, Lahore, Pakistan', N'03111147111', N'', 1, CAST(N'2023-09-23T07:16:37.1670000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:16:37.1670000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (13, 82, N'PIA Office', N'PIA Office', N'LHE-04', N'PIA Office', N'4-UGF, Century Tower, Kalma Chowk,<br />Main Boulevard, Gulberg-III, Lahore, Pakistan.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:17:24.7020000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:17:24.7020000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (14, 82, N'Faremakers', N'Faremakers', N'LHE-05', N'Faremakers', N'3-UGF, Century Tower, Kalma Chowk,<br />Main Boulevard, Gulberg-III, Lahore, Pakistan.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:18:00.0590000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:18:00.0590000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (15, 82, N'K.M. Travels Dubai', N'K.M. Travels Dubai', N'LHE-06', N'', N'5-UGF, Century Tower, Kalma Chowk,<br />Main Boulevard, Gulberg-III, Lahore, Pakistan.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:18:27.5130000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:18:27.5130000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (16, 82, N'Holidays Maker', N'Holidays Maker', N'LHE-07', N'', N'6-UGF, Century Tower, Kalma Chowk,<br />Main Boulevard, Gulberg-III, Lahore, Pakistan.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:18:51.2860000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:18:51.2860000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (17, 82, N'DHA Y Block', N'DHA Y Block', N'LHE-08', N'', N'Office No. 11, Y Block Commercial Plaza<br />round Market phase 3 Dha Lahore.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:19:29.0440000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:19:29.0440000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (18, 82, N'DHA H Block', N'DHA H Block', N'LHE-09', N'', N'Office No. 01,  Plaza No.01, Block-G,<br />Phase-1C, Dha Lahore Cantt.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:19:58.6820000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:19:58.6820000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (19, 82, N'FM Travel', N'FM Travel', N'LHE-10', N'', N'9-UGF, Century Tower, Kalma Chowk,<br />Main Boulevard, Gulberg-III, Lahore, Pakistan.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:20:27.1030000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:20:27.1030000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (20, 82, N'Iqbal Town Branch', N'Iqbal Town Branch', N'LHE-11', N'', N'03 GF, Akbari Shoping Mall, Hunza Block,<br />Allama Iqbal Town, Lahore, Pakistan.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:20:47.3730000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:20:47.3730000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (21, 82, N'Johar Town', N'Johar Town', N'LHE-12', N'', N'Office No. 95 G1 Market,<br />Johar Town, Lahore.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:21:12.0650000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:21:12.0650000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (22, 82, N'Online Branch', N'Online Branch', N'LHE-13', N'', N'3-UGF, Century Tower, Kalma Chowk,<br />Main Boulevard, Gulberg-III, Lahore, Pakistan.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:21:32.3580000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:21:32.3580000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (23, 82, N'Cantt Branch', N'Cantt Branch', N'LHE-14', N'', N'Office No. 3, Cantt Commercial Complex,<br /> Abid Majeed Road, Lahore Cantt.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:22:00.2770000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:22:00.2770000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (24, 82, N'FM2 Travel', N'FM2 Travel', N'LHE-15', N'', N'8-UGF, Century Tower, Kalma Chowk,<br />Main Boulevard, Gulberg-III, Lahore, Pakistan.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:22:28.7460000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:22:28.7460000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Branches] ([id], [cityId], [name], [description], [code], [friendlyName], [address], [phone], [email], [isActive], [createdAt], [updatedAt]) VALUES (25, 82, N'Umrah Branch', N'Umrah Branch', N'LHE-16', N'', N'3-UGF, Century Tower, Kalma Chowk,<br />Main Boulevard, Gulberg-III, Lahore, Pakistan.', N'03111147111', N'', 1, CAST(N'2023-09-23T07:22:55.0520000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:22:55.0520000+00:00' AS DateTimeOffset))
+GO
+SET IDENTITY_INSERT [dbo].[Branches] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Departments] ON 
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (1, N'Administration', N'Administration', 1, CAST(N'2023-09-23T06:40:30.1680000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:25.4190000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (2, N'Accounts', N'Accounts', 1, CAST(N'2023-09-23T06:40:46.6180000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T06:40:46.6180000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (3, N'Sales', N'Sales', 1, CAST(N'2023-09-23T10:01:32.0490000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:32.0490000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (4, N'Call Center', N'Call Center', 1, CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (5, N'Manager', N'Manager', 1, CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (6, N'new deprtment', N'new deprtment', 1, CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (7, N'IT', N'IT', 1, CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (8, N'R&D', N'R&D', 1, CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (10, N'ControlRoom', N'ControlRoom', 1, CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (11, N'Lawyer', N'Lawyer', 1, CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (12, N'OtherStaff', N'OtherStaff', 1, CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (13, N'Rider', N'Rider', 1, CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (14, N'OfficeBoy', N'OfficeBoy', 1, CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (15, N'AdminStaff', N'AdminStaff', 1, CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (16, N'HR', N'HR', 1, CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (17, N'Media', N'Media', 1, CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Departments] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (18, N'Default ', N'Default ', 1, CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T10:01:38.5880000+00:00' AS DateTimeOffset))
+GO
+SET IDENTITY_INSERT [dbo].[Departments] OFF
+GO
+SET IDENTITY_INSERT [dbo].[CompanyTypes] ON 
+GO
+INSERT [dbo].[CompanyTypes] ([id], [name], [description], [createdAt], [updatedAt]) VALUES (1, N'Travel', N'Travel', CAST(N'2023-08-16T21:11:42.9370000+00:00' AS DateTimeOffset), CAST(N'2023-08-16T21:11:42.9370000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyTypes] ([id], [name], [description], [createdAt], [updatedAt]) VALUES (2, N'Sports', N'Sports', CAST(N'2023-08-16T21:11:42.9370000+00:00' AS DateTimeOffset), CAST(N'2023-08-16T21:11:42.9370000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyTypes] ([id], [name], [description], [createdAt], [updatedAt]) VALUES (3, N'Mall', N'Mall', CAST(N'2023-08-16T21:11:42.9370000+00:00' AS DateTimeOffset), CAST(N'2023-08-16T21:11:42.9370000+00:00' AS DateTimeOffset))
+GO
+SET IDENTITY_INSERT [dbo].[CompanyTypes] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Companies] ON 
+GO
+INSERT [dbo].[Companies] ([id], [companyTypeId], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (1, 1, N'Travel Channel', N'Travel Channel Faremakers', 1, CAST(N'2023-08-25T11:57:25.0380000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T09:49:57.9140000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Companies] ([id], [companyTypeId], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (2, 3, N'FM Mall', N'FM Mall', 1, CAST(N'2023-09-05T18:08:59.2410000+00:00' AS DateTimeOffset), CAST(N'2023-09-18T12:16:28.3920000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Companies] ([id], [companyTypeId], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (3, 2, N'FM Sports', N'FM Sports', 1, CAST(N'2023-09-07T09:29:44.7760000+00:00' AS DateTimeOffset), CAST(N'2023-09-13T13:01:41.3880000+00:00' AS DateTimeOffset))
+GO
+SET IDENTITY_INSERT [dbo].[Companies] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Roles] ON 
+GO
+INSERT [dbo].[Roles] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (1, N'Admin', N'Admin', 1, CAST(N'2023-08-25T11:42:53.2530000+00:00' AS DateTimeOffset), CAST(N'2023-08-25T11:42:53.2530000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Roles] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (2, N'User', N'User', 1, CAST(N'2023-08-25T11:43:04.9500000+00:00' AS DateTimeOffset), CAST(N'2023-08-25T11:43:04.9500000+00:00' AS DateTimeOffset))
+GO
+SET IDENTITY_INSERT [dbo].[Roles] OFF
+GO
+SET IDENTITY_INSERT [dbo].[CompanyBranchDepartmentUserRoles] ON 
+GO
+INSERT [dbo].[CompanyBranchDepartmentUserRoles] ([id], [userId], [roleId], [companyId], [branchId], [departmentId], [createdAt], [updatedAt]) VALUES (1, 1, 1, NULL, NULL, NULL, CAST(N'2023-08-25T11:58:07.4990000+00:00' AS DateTimeOffset), CAST(N'2023-08-25T11:58:07.4990000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartmentUserRoles] ([id], [userId], [roleId], [companyId], [branchId], [departmentId], [createdAt], [updatedAt]) VALUES (3, 2, 1, 1, NULL, NULL, CAST(N'2023-09-23T07:36:53.2800000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:36:53.2800000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartmentUserRoles] ([id], [userId], [roleId], [companyId], [branchId], [departmentId], [createdAt], [updatedAt]) VALUES (6, 4, 1, 3, NULL, NULL, CAST(N'2023-09-23T09:49:06.7420000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T09:49:06.7420000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartmentUserRoles] ([id], [userId], [roleId], [companyId], [branchId], [departmentId], [createdAt], [updatedAt]) VALUES (7, 3, 1, 2, NULL, NULL, CAST(N'2023-09-23T09:49:26.8980000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T09:49:26.8980000+00:00' AS DateTimeOffset))
+GO
+SET IDENTITY_INSERT [dbo].[CompanyBranchDepartmentUserRoles] OFF
+GO
+SET IDENTITY_INSERT [dbo].[CompanyBranches] ON 
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (1, 1, 1, 1, CAST(N'2023-09-23T06:41:12.9160000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T06:41:12.9160000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (2, 1, 2, 2, CAST(N'2023-09-23T07:11:32.7470000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:11:32.7470000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (3, 1, 3, 3, CAST(N'2023-09-23T07:11:47.4830000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:11:47.4830000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (4, 1, 4, 1, CAST(N'2023-09-23T07:12:03.9120000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:03.9120000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (5, 1, 5, 1, CAST(N'2023-09-23T07:12:14.6900000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:14.6900000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (6, 1, 6, 1, CAST(N'2023-09-23T07:12:24.4160000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:24.4160000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (7, 1, 7, 1, CAST(N'2023-09-23T07:12:32.5380000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:32.5380000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (8, 1, 8, 1, CAST(N'2023-09-23T07:12:53.7990000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:53.7990000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (9, 0, 9, 1, CAST(N'2023-09-23T07:13:05.2580000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T08:12:50.1520000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (10, 1, 10, 1, CAST(N'2023-09-23T07:25:04.3080000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:25:04.3080000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (11, 1, 11, 1, CAST(N'2023-09-23T07:26:10.0650000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:10.0650000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (12, 1, 12, 1, CAST(N'2023-09-23T07:26:13.7620000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:13.7620000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (13, 1, 13, 1, CAST(N'2023-09-23T07:26:17.6080000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:17.6080000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (14, 1, 14, 1, CAST(N'2023-09-23T07:26:20.7440000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:20.7440000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (15, 1, 15, 1, CAST(N'2023-09-23T07:26:24.5680000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:24.5680000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (16, 1, 16, 1, CAST(N'2023-09-23T07:26:27.4350000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:27.4350000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (17, 1, 17, 1, CAST(N'2023-09-23T07:26:30.1280000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:30.1280000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (18, 1, 18, 1, CAST(N'2023-09-23T07:26:32.9440000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:32.9440000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (19, 1, 19, 1, CAST(N'2023-09-23T07:26:35.7910000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:35.7910000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (20, 1, 20, 1, CAST(N'2023-09-23T07:26:39.1230000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:39.1230000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (21, 1, 21, 1, CAST(N'2023-09-23T07:27:05.1060000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:05.1060000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (22, 1, 22, 1, CAST(N'2023-09-23T07:27:07.7960000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:07.7960000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (23, 1, 23, 1, CAST(N'2023-09-23T07:27:10.5060000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:10.5060000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (24, 1, 24, 1, CAST(N'2023-09-23T07:27:13.7360000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:13.7360000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranches] ([id], [isActive], [branchId], [companyId], [createdAt], [updatedAt]) VALUES (25, 1, 25, 1, CAST(N'2023-09-23T07:27:16.6380000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:16.6380000+00:00' AS DateTimeOffset))
+GO
+SET IDENTITY_INSERT [dbo].[CompanyBranches] OFF
+GO
+SET IDENTITY_INSERT [dbo].[CompanyBranchDepartments] ON 
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (1, 1, 1, 1, CAST(N'2023-09-23T06:41:12.9290000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T06:41:12.9290000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (2, 1, 18, 1, CAST(N'2023-09-23T06:41:12.9290000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T06:41:12.9290000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (3, 2, 1, 1, CAST(N'2023-09-23T07:11:32.7570000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:11:32.7570000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (4, 2, 18, 1, CAST(N'2023-09-23T07:11:32.7570000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:11:32.7570000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (5, 3, 1, 1, CAST(N'2023-09-23T07:11:47.4900000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:11:47.4900000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (6, 3, 18, 1, CAST(N'2023-09-23T07:11:47.4900000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:11:47.4900000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (7, 4, 1, 1, CAST(N'2023-09-23T07:12:03.9200000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:03.9200000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (8, 4, 18, 1, CAST(N'2023-09-23T07:12:03.9200000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:03.9200000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (9, 5, 1, 1, CAST(N'2023-09-23T07:12:14.6940000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:14.6940000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (10, 5, 18, 1, CAST(N'2023-09-23T07:12:14.6940000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:14.6940000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (11, 6, 1, 1, CAST(N'2023-09-23T07:12:24.4210000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:24.4210000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (12, 6, 18, 1, CAST(N'2023-09-23T07:12:24.4220000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:24.4220000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (13, 7, 1, 1, CAST(N'2023-09-23T07:12:32.5470000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:32.5470000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (14, 7, 18, 1, CAST(N'2023-09-23T07:12:32.5470000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:32.5470000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (15, 8, 1, 1, CAST(N'2023-09-23T07:12:53.8040000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:53.8040000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (16, 8, 18, 1, CAST(N'2023-09-23T07:12:53.8040000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:12:53.8040000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (17, 9, 1, 1, CAST(N'2023-09-23T07:13:05.2630000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:13:05.2630000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (18, 9, 18, 1, CAST(N'2023-09-23T07:13:05.2630000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:13:05.2630000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (19, 10, 1, 1, CAST(N'2023-09-23T07:25:04.3220000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:25:04.3220000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (20, 10, 18, 1, CAST(N'2023-09-23T07:25:04.3220000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:25:04.3220000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (21, 11, 1, 1, CAST(N'2023-09-23T07:26:10.0690000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:10.0690000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (22, 11, 18, 1, CAST(N'2023-09-23T07:26:10.0700000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:10.0700000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (23, 12, 1, 1, CAST(N'2023-09-23T07:26:13.7670000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:13.7670000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (24, 12, 18, 1, CAST(N'2023-09-23T07:26:13.7670000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:13.7670000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (25, 13, 1, 1, CAST(N'2023-09-23T07:26:17.6120000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:17.6120000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (26, 13, 18, 1, CAST(N'2023-09-23T07:26:17.6120000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:17.6120000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (27, 14, 1, 1, CAST(N'2023-09-23T07:26:20.7470000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:20.7470000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (28, 14, 18, 1, CAST(N'2023-09-23T07:26:20.7470000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:20.7470000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (29, 15, 1, 1, CAST(N'2023-09-23T07:26:24.5750000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:24.5750000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (30, 15, 18, 1, CAST(N'2023-09-23T07:26:24.5750000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:24.5750000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (31, 16, 1, 1, CAST(N'2023-09-23T07:26:27.4410000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:27.4410000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (32, 16, 18, 1, CAST(N'2023-09-23T07:26:27.4410000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:27.4410000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (33, 17, 1, 1, CAST(N'2023-09-23T07:26:30.1310000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:30.1310000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (34, 17, 18, 1, CAST(N'2023-09-23T07:26:30.1320000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:30.1320000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (35, 18, 1, 1, CAST(N'2023-09-23T07:26:32.9470000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:32.9470000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (36, 18, 18, 1, CAST(N'2023-09-23T07:26:32.9480000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:32.9480000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (37, 19, 1, 1, CAST(N'2023-09-23T07:26:35.7960000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:35.7960000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (38, 19, 18, 1, CAST(N'2023-09-23T07:26:35.7960000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:35.7960000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (39, 20, 1, 1, CAST(N'2023-09-23T07:26:39.1290000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:39.1290000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (40, 20, 18, 1, CAST(N'2023-09-23T07:26:39.1290000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:26:39.1290000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (41, 21, 1, 1, CAST(N'2023-09-23T07:27:05.1110000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:05.1110000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (42, 21, 18, 1, CAST(N'2023-09-23T07:27:05.1110000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:05.1110000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (43, 22, 1, 1, CAST(N'2023-09-23T07:27:07.8000000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:07.8000000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (44, 22, 18, 1, CAST(N'2023-09-23T07:27:07.8000000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:07.8000000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (45, 23, 1, 1, CAST(N'2023-09-23T07:27:10.5110000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:10.5110000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (46, 23, 18, 1, CAST(N'2023-09-23T07:27:10.5110000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:10.5110000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (47, 24, 1, 1, CAST(N'2023-09-23T07:27:13.7410000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:13.7410000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (48, 24, 18, 1, CAST(N'2023-09-23T07:27:13.7410000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:13.7410000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (49, 25, 1, 1, CAST(N'2023-09-23T07:27:16.6410000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:16.6410000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[CompanyBranchDepartments] ([id], [companyBranchId], [departmentId], [isActive], [createdAt], [updatedAt]) VALUES (50, 25, 18, 1, CAST(N'2023-09-23T07:27:16.6410000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:27:16.6410000+00:00' AS DateTimeOffset))
+GO
+SET IDENTITY_INSERT [dbo].[CompanyBranchDepartments] OFF
+GO
+SET IDENTITY_INSERT [dbo].[UserCompanyBranchDepartments] ON 
+GO
+INSERT [dbo].[UserCompanyBranchDepartments] ([id], [isActive], [companyBranchDepartmentId], [userId], [createdAt], [updatedAt]) VALUES (1, 1, 1, 2, CAST(N'2023-09-23T07:35:20.8220000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T07:35:20.8220000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[UserCompanyBranchDepartments] ([id], [isActive], [companyBranchDepartmentId], [userId], [createdAt], [updatedAt]) VALUES (2, 1, 3, 3, CAST(N'2023-09-23T09:48:30.8240000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T09:48:30.8240000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[UserCompanyBranchDepartments] ([id], [isActive], [companyBranchDepartmentId], [userId], [createdAt], [updatedAt]) VALUES (3, 1, 5, 4, CAST(N'2023-09-23T09:48:53.5160000+00:00' AS DateTimeOffset), CAST(N'2023-09-23T09:48:53.5160000+00:00' AS DateTimeOffset))
+GO
+SET IDENTITY_INSERT [dbo].[UserCompanyBranchDepartments] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Rights] ON 
+GO
+INSERT [dbo].[Rights] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (1, N'Add', N'Add', 1, CAST(N'2023-08-16T21:11:42.9370000+00:00' AS DateTimeOffset), CAST(N'2023-08-16T21:11:42.9370000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Rights] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (2, N'Update', N'Update', 1, CAST(N'2023-08-16T21:11:42.9370000+00:00' AS DateTimeOffset), CAST(N'2023-08-16T21:11:42.9370000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Rights] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (3, N'Delete', N'Delete', 1, CAST(N'2023-08-16T21:11:42.9370000+00:00' AS DateTimeOffset), CAST(N'2023-08-16T21:11:42.9370000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[Rights] ([id], [name], [description], [isActive], [createdAt], [updatedAt]) VALUES (4, N'Read', N'Read', 1, CAST(N'2023-08-16T21:11:42.9370000+00:00' AS DateTimeOffset), CAST(N'2023-08-16T21:11:42.9370000+00:00' AS DateTimeOffset))
+GO
+SET IDENTITY_INSERT [dbo].[Rights] OFF
+GO
+SET IDENTITY_INSERT [dbo].[RoleRights] ON 
+GO
+INSERT [dbo].[RoleRights] ([id], [roleId], [rightId], [isActive], [createdAt], [updatedAt]) VALUES (1, 1, 1, 1, CAST(N'2023-08-25T11:42:53.2690000+00:00' AS DateTimeOffset), CAST(N'2023-08-25T11:42:53.2690000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[RoleRights] ([id], [roleId], [rightId], [isActive], [createdAt], [updatedAt]) VALUES (2, 1, 2, 1, CAST(N'2023-08-25T11:42:53.2700000+00:00' AS DateTimeOffset), CAST(N'2023-08-25T11:42:53.2700000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[RoleRights] ([id], [roleId], [rightId], [isActive], [createdAt], [updatedAt]) VALUES (3, 1, 3, 1, CAST(N'2023-08-25T11:42:53.2700000+00:00' AS DateTimeOffset), CAST(N'2023-08-25T11:42:53.2700000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[RoleRights] ([id], [roleId], [rightId], [isActive], [createdAt], [updatedAt]) VALUES (4, 1, 4, 1, CAST(N'2023-08-25T11:43:04.9550000+00:00' AS DateTimeOffset), CAST(N'2023-08-25T11:43:04.9550000+00:00' AS DateTimeOffset))
+GO
+INSERT [dbo].[RoleRights] ([id], [roleId], [rightId], [isActive], [createdAt], [updatedAt]) VALUES (5, 2, 4, 1, CAST(N'2023-08-25T11:43:04.9550000+00:00' AS DateTimeOffset), CAST(N'2023-08-25T11:43:04.9550000+00:00' AS DateTimeOffset))
+GO
+SET IDENTITY_INSERT [dbo].[RoleRights] OFF
+GO
+INSERT [dbo].[SequelizeMeta] ([name]) VALUES (N'20230920124649-add-fields-to-company-branch.js')
+GO
+INSERT [dbo].[SequelizeMeta] ([name]) VALUES (N'20230921114034-add-city-id-in-branches.js')
+GO
